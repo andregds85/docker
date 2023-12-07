@@ -56,7 +56,16 @@
         <a href="#section1">Rodando imagem</a>
         <a href="#section2">Docker</a>
         <a href="#section3">Imagem</a>
+        <a href="#section4">Container</a>
+        <a href="#section5">Manter o Container Run</a>
+
+
+
+        
+
     </nav>
+    
+    
     <section id="section1">
         <h2>Rodando imagens Docker </h2>
         <p>$ docker run ubumtu </p>
@@ -77,23 +86,35 @@
    
     </section>
 
+
+
     <section id="section3">
         <h2>Imagem</h2>
          <p>É como se fosse uma iso do Sistema Operacional  </p>
          <p>Serve para se tornar uma maquina virtual e se tornar um container</p>
          <p>As imagens podem ser limpas como as que você usa como as que você usa para formatar um computador ou customizalas com vários aplicativos instalados por exemplo Apache, mysql, jekins, nodejs e etc ...</p>
-         <p>Qualquer coisa que pode ser feita em linha de comando pode servir de comando para a imagem 
-        
+         <p>Qualquer coisa que pode ser feita em linha de comando pode servir de configuração para a imagem 
          </p>
-
      </section>
 
+     <section id="section4">
+        <h2>Container</h2>
+        <P>É uma maquina virtual depois de pronta para uso iniciada apartir de uma imagem . Trata-se
+         de um ambiente completo que pode ser acessado via linha de comando. Containers Ligam  e Desligam 
+         instantaneamente e podem ser "resetados" ao desligar ou manter as congurações para a próxima vez que forem ligados.</P>
+         <P>Pensem assim Você baixa uma imagem iso, formata seu computador instala uns programas e pronto ele é um container</P>
+         <p>O poder e a Velocidade do docker vem da vantagem de que todas as imagens já estão prontas para uso e não há perda de tempo para formatação da máquina. </p>
+         <p>Então se você rodar uma imagem do MYSQL o docker vai fazer o download e sem nenhuma interação o servidor ja vai estar </p>  
+    </section>
 
-
-
-
-
-
+        
+     <section id="section5">
+        <h2>Manter o Container Rodando</h2>
+        <p><h3>$ docker run ubumtu bash</h3></p>
+        <p>Este Comando vai montar toda configuração e te dar acesso
+            ao shell root do container.</p>
+         <p>Equanto você não digitar exit e der enter o container permanecerá rodando</p>
+     </section>
 
 
     <footer>
