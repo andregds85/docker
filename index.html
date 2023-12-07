@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página Única</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1b22f5;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            background-color: #f51b1b;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        section:nth-child(odd) {
+            background-color: #f4f4f4;
+        }
+
+        footer {
+            background-color: #f51b1b;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Minha Página Única</h1>
+    </header>
+    <nav>
+        <a href="#section1">Rodando imagem</a>
+        <a href="#section2">Docker</a>
+        <a href="#section3">Imagem</a>
+    </nav>
+    <section id="section1">
+        <h2>Rodando imagens Docker </h2>
+        <p>$ docker run ubumtu </p>
+        
+      <h3>Este comando vai seguir os seguintes passos  </h3>
+      <p>Baixar a ultima versão do Ubumtu </p>
+      <p>Instalar a imagem em uma maquina virtual </p>
+      <p>Finalizar a imagem </p>
+      <p>É possivel ainda escolher a versão da imagem  </p>
+      <p>O problema do comando run quando ele cria um container e morre, desligando assim a máquina e deixando você sem acesso</p>  
+    </section>
+   
+
+    <section id="section2">
+       <h2>Docker</h2>
+        <p>Docker é uma ferramenta que cria micro maquinas virtuais com a finalidade de não "sujar" o ambiente do desenvolvedor</p>
+        <p>Dessa forma você pode ter dois ambientes configurados sem um conflitar um com Outro</p>
+   
+    </section>
+
+    <section id="section3">
+        <h2>Imagem</h2>
+         <p>É como se fosse uma iso do Sistema Operacional  </p>
+         <p>Serve para se tornar uma maquina virtual e se tornar um container</p>
+         <p>As imagens podem ser limpas como as que você usa como as que você usa para formatar um computador ou customizalas com vários aplicativos instalados por exemplo Apache, mysql, jekins, nodejs e etc ...</p>
+         <p>Qualquer coisa que pode ser feita em linha de comando pode servir de comando para a imagem 
+        
+         </p>
+
+     </section>
+
+
+
+
+
+
+
+
+
+    <footer>
+        &copy; 2023 Minha Página Única.
+    </footer>
+</body>
+</html>
