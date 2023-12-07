@@ -53,20 +53,18 @@
         <h1>Minha Página Única</h1>
     </header>
     <nav>
-        <a href="#section1">Rodando imagem</a>
-        <a href="#section2">Docker</a>
-        <a href="#section3">Imagem</a>
-        <a href="#section4">Container</a>
-        <a href="#section5">Manter o Container Run</a>
+        <a href="#execimagem">Rodando imagem</a>
+        <a href="#docker">Docker</a>
+        <a href="#imagem">Imagem</a>
+        <a href="#container">Container</a>
+        <a href="#containerrun">Manter o Container Run</a>
+        <a href="#listarcontainer">Listando Container</a>
 
-
-
-        
-
+  
     </nav>
     
     
-    <section id="section1">
+    <section id="execimagem">
         <h2>Rodando imagens Docker </h2>
         <p>$ docker run ubumtu </p>
         
@@ -79,7 +77,7 @@
     </section>
    
 
-    <section id="section2">
+    <section id="docker">
        <h2>Docker</h2>
         <p>Docker é uma ferramenta que cria micro maquinas virtuais com a finalidade de não "sujar" o ambiente do desenvolvedor</p>
         <p>Dessa forma você pode ter dois ambientes configurados sem um conflitar um com Outro</p>
@@ -88,7 +86,7 @@
 
 
 
-    <section id="section3">
+    <section id="imagem">
         <h2>Imagem</h2>
          <p>É como se fosse uma iso do Sistema Operacional  </p>
          <p>Serve para se tornar uma maquina virtual e se tornar um container</p>
@@ -97,7 +95,8 @@
          </p>
      </section>
 
-     <section id="section4">
+    
+     <section id="container">
         <h2>Container</h2>
         <P>É uma maquina virtual depois de pronta para uso iniciada apartir de uma imagem . Trata-se
          de um ambiente completo que pode ser acessado via linha de comando. Containers Ligam  e Desligam 
@@ -107,14 +106,32 @@
          <p>Então se você rodar uma imagem do MYSQL o docker vai fazer o download e sem nenhuma interação o servidor ja vai estar </p>  
     </section>
 
-        
-     <section id="section5">
+
+    
+
+     <section id="containerrun">
         <h2>Manter o Container Rodando</h2>
         <p><h3>$ docker run ubumtu bash</h3></p>
         <p>Este Comando vai montar toda configuração e te dar acesso
             ao shell root do container.</p>
          <p>Equanto você não digitar exit e der enter o container permanecerá rodando</p>
      </section>
+
+
+     <section id="#listarcontainer">
+        <h2>Listando Container </h2>
+         <p>Cada vez que você executa o comando run, o docker vai criar um novo container do zero
+            e armazenar em cache para utilização futura. </p>
+         <p>Você não executar o comando Run toda hora. </p>
+
+        <h3> $ docker ps -a </h3>
+
+        <p>O Docker cria automaticamente um nome aleatorio para cada container criado apartir do 
+            do comando run, Através desse nome você pode continuar utilizando o nome    </p>
+     </section>
+
+
+
 
 
     <footer>
