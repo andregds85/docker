@@ -59,6 +59,7 @@
         <a href="#container">Container</a>
         <a href="#containerrun">Manter o Container Run</a>
         <a href="#listarcontainer">Listando Container</a>
+        <a href="#paracontainer">Para Container</a>
 
   
     </nav>
@@ -81,8 +82,7 @@
        <h2>Docker</h2>
         <p>Docker é uma ferramenta que cria micro maquinas virtuais com a finalidade de não "sujar" o ambiente do desenvolvedor</p>
         <p>Dessa forma você pode ter dois ambientes configurados sem um conflitar um com Outro</p>
-   
-    </section>
+      </section>
 
 
 
@@ -106,7 +106,6 @@
          <p>Então se você rodar uma imagem do MYSQL o docker vai fazer o download e sem nenhuma interação o servidor ja vai estar </p>  
     </section>
 
-
     
 
      <section id="containerrun">
@@ -118,7 +117,7 @@
      </section>
 
 
-     <section id="#listarcontainer">
+     <section id="listarcontainer">
         <h2>Listando Container </h2>
          <p>Cada vez que você executa o comando run, o docker vai criar um novo container do zero
             e armazenar em cache para utilização futura. </p>
@@ -127,8 +126,33 @@
         <h3> $ docker ps -a </h3>
 
         <p>O Docker cria automaticamente um nome aleatorio para cada container criado apartir do 
-            do comando run, Através desse nome você pode continuar utilizando o nome    </p>
+            do comando run, Através desse nome você pode continuar utilizando o container sem perder os dados a cada inicialização
+            </p>
+            
      </section>
+
+
+     <section id="paracontainer">
+        <h2>Para Container / Rodando Container ja Criado</h2>
+
+        <p><h3>$ docker start NOME_CONTAINER </h3></p>
+
+        <P>Ate o comando stop ser rodado. Portanto você não tera acesso ao shell sem utilizar outro 
+            comando </P>
+
+            
+            
+     </section>
+
+
+
+
+
+
+
+
+
+
 
 
 
