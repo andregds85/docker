@@ -69,6 +69,8 @@
             <a href="#listarcontainer">Listando Container</a>
             <a href="#paracontainer">Para Container</a>
             <a href="#instalar">Instalar Docker</a>
+            <a href="#portainer">Portainer</a>
+
             </nav>
     
             <section id="execimagem">
@@ -188,8 +190,7 @@
             <p><h3>$ docker ps -a    </h3></p> 
             <p><h3>  Status Exited = está parado</h3></p> 
             <p><h3>  Status up está rodando </h3></p>
-            
-            
+                        
             <h2>Parar um container que está rodando </h2>
             <p><h3>obs pode ser o id ou o nome 
             </h3></p>  
@@ -205,15 +206,34 @@
             <h2>Remoção total da imagem</h2>
             <p><h3>$ docker rmi id_da_imagem
             </h3></p>  
-       
 
 
             <h2>Instalação do Docker </h2>
             <p><h3><a href="https://gist.github.com/martinsam16/4492957e3bbea34046f2c8b49c3e5ac0"> instalação do Docker</a></h3></p>      
             </section>    
 
-
-
+            <section id="portainer">
+                <h2>Portainer .io e Docker</h2>
+          
+                <p><h3>Instalar o Docker</h3></p>
+                <p>sudo apt-get install docker.io</p>
+               
+                <p><h3>Reiniciar o serviço do docker </h3></p>
+                <p>sudo systemctl restart docker</p>
+               
+                <p><h3>Verificar o status do docker</h3></p>
+                <p>sudo systemctl status docker</p>
+               
+                <p><h3> Ativar no boot</h3></p>
+                <p>sudo systemctl enable docker</p>
+               
+                <p><h3> Instalar o portainer (Altere o seu diret贸rio Home)</h3></p>
+                <p>sudo docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v /home/juliano/Portainer/data:/data portainer/portainer</p>
+               
+                <p><h3> Abra o navegador</h3></p>
+                <p> localhost:9000</p>           
+           
+            </section>
 
     <footer>
         &copy; Docker.
